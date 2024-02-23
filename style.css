@@ -73,7 +73,7 @@ body{
     padding: 2px;
 }
 
-.main .box2 .text3{
+.text3{
     font-family: "DM Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -85,6 +85,7 @@ body{
 .main .sep{
     height: 5px;
     background-color:gray;
+    width: 100vw;
 }
 
 .redbtn{
@@ -102,7 +103,7 @@ nav .signbtn{
     border-radius: 3px;
 }
 
-nav .lan{
+.lan{
     height: 32px;
     width: 100px;
     font-size: 15px;
@@ -140,13 +141,12 @@ nav .lan{
     margin: 15px;
 }
 
-.main .sec1{
+.main .sec{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 70px auto;
     width: 80vw;
-    margin-bottom: 70px;
 }
 
 .sectext{
@@ -183,15 +183,6 @@ nav .lan{
     right: 16px;
 }
 
-.main .sec2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 80vw;
-    margin-bottom: 70px;
-}
-
 .main .sec2 .imgsec{
     position: relative;
 }
@@ -200,15 +191,6 @@ nav .lan{
     height: 427px;
     position: relative;
     z-index: 10;
-}
-
-.main .sec3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 80vw;
-    margin-bottom: 70px;
 }
 
 .main .sec3 .imgsec{
@@ -228,15 +210,6 @@ nav .lan{
     height: 203px;
 }
 
-.main .sec4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 80vw;
-    margin-bottom: 70px;
-}
-
 .main .sec4 .imgsec{
     position: relative;
 }
@@ -250,6 +223,7 @@ nav .lan{
 .main .faq{
     background-color: black;
     padding: 72px;
+    color: white;
 }
 
 .main .faq h2{
@@ -263,7 +237,7 @@ nav .lan{
 .main .faq .faqbox{
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 80%;
     background-color: rgb(50, 50, 50);
     padding: 24px;
     margin: 15px auto;
@@ -288,13 +262,15 @@ nav .lan{
 
 footer{
     color: white;
-    width: 60vw;
+    width: 80vw;
     margin: auto;
+    padding: 24px;
 }
 
 .footerbox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 24px;
 }
 
 .footerbox .footer-items{
@@ -308,4 +284,36 @@ footer{
     font-family: "DM Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+.faq .faq-bottom{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-text{
+    color: white;
+    font-family: "DM Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width : 1050px) {
+    .sec{
+        flex-wrap: wrap;
+    }
+    .sec .sectext{
+        text-align: center;
+    }
+    .sec .sectext2{
+        text-align: center;
+        padding: 5px;
+    }
+    .footerbox{
+        grid-template-columns: 1fr 1fr;
+    }
 }
