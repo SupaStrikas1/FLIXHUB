@@ -295,11 +295,15 @@ footer{
     justify-content: center;
 }
 
-footer .footer-text{
+footer .footer-text,.footer-text2{
     color: white;
     font-family: "DM Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+footer .footer-text2{
+    margin: 11px;
 }
 
 @media screen and (max-width : 1050px) {
